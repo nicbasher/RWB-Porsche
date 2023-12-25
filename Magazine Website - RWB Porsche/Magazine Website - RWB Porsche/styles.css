@@ -1,0 +1,1835 @@
+body {
+    margin: 0px;
+    font-family: "rethink sans semibold", Helvetica Neue, Helvetica Neue, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation ============================= */
+
+.navbar {
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -1px 5px 5px 0px rgba(231, 69, 69, 0.76);
+    -webkit-box-shadow: -1px 5px 5px 0px rgba(231, 69, 69, 0.76);
+    -moz-box-shadow: -1px 5px 5px 0px rgba(231, 69, 69, 0.76);
+}
+
+.navbarleft img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.menu-nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.navbar-left nav {
+    margin-left: 30px;
+}
+
+#close-menu {
+    display: none;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    background-color: firebrick;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-nav li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    justify-content: space-around;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/*.navbar-left>*,
+.navbar-right>* {
+    margin: 10px;
+}*/
+
+.find-a-location {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.find-a-location .menu-icon {
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons svg {
+    width: 22px;
+    height: 22px;
+}
+
+.menu-nav li a:hover,
+.find-a-location:hover,
+.social-icons svg:hover {
+    color: firebrick;
+    fill: firebrick;
+}
+
+.navbar-left img {
+    max-width: 260px;
+}
+
+.social-icons svg,
+.facebook .instagram,
+.twitter {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+/* Articles ===================== */
+
+.article-left img {
+    max-width: 60%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.car-article {
+    margin-top: 30px;
+    display: flex;
+    background-color: rgb(199, 110, 110);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.article-left,
+.article-right {
+    max-width: 50%;
+    width: 50%;
+    margin-right: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.article-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.article-button {
+    border: 1px solid white;
+    max-width: max-content;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.article-button:hover {
+    background-color: firebrick;
+    text-decoration: none;
+}
+
+
+/* Site Footer ========================= */
+
+.navbar-right-footer {
+    border: 1px solid white;
+    max-width: max-content;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+}
+
+.site-footer {
+    padding: 20x;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px -5px 5px 0px rgba(231, 69, 69, 0.76);
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(231, 69, 69, 0.76);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(231, 69, 69, 0.76);
+    max-width: 100%;
+    flex-flow: 1;
+    margin-top: 50px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.site-footer.justify-content-center {
+    justify-content: center;
+}
+
+.social-icons {
+    padding-left: 25px;
+}
+
+.article-right {
+    margin-right: 20px;
+}
+
+.article-section .Nakai-san-drilling {
+    margin: 0 auto;
+}
+
+/* Start Media Queries ============================== */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .car-article,
+    .article-left,
+    .article-right {
+        flex-direction: row;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .navbar-left,
+    .navbar-right {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .car-article {
+        flex-direction: column;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+
+    .car-article {
+        flex-direction: row;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 20px 60px;
+    }
+
+    .car-article {
+        flex-direction: row;
+    }
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: firebrick;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: darkred;
+}
+
+.contact-section {
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.Nakai-san-drilling {
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.article-section {
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 50%;
+    width: 50%;
+    margin-right: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-family: "rethink sans semibold", Helvetica Neue, Helvetica Neue, sans-serif;
+    display: flex;
+}
+
+.article-title {
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-family: "rethink sans semibold", Helvetica Neue, Helvetica Neue, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.subtitle {
+    font-size: 18px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 15px;
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "rethink sans semibold", Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.article-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-1,
+.article-2,
+.article-3 {
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+
+    .article-1,
+    .article-2,
+    .article-3 {
+        max-width: 50%;
+    }
+}
+
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .site-footer .navbar-left,
+    .site-footer .navbar-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .article-section {
+        padding: 0.5rem;
+    }
+
+    .site-footer {
+        padding: 0.5rem;
+    }
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-section img {
+        width: 100%;
+        /* Adjust this as needed */
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar .social-icons svg,
+    .site-footer .social-icons svg {
+        width: 24px;
+        /* Adjust as needed */
+        height: 24px;
+        /* Adjust as needed */
+    }
+}
+
+/* Hide regular menu items on mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Style for the hamburger icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Example of a simple hamburger icon */
+.menu-icon svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+/* You might need to adjust this depending on your actual HTML structure */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+    /* Adjust padding or height of .car-article divs */
+    .car-article {
+        padding-top: 10px;
+        /* Adjust as needed */
+        padding-bottom: 10px;
+        /* Adjust as needed */
+        /* If you have a set height, you can adjust it here */
+    }
+
+    /* Hide paragraph text in articles */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.car-article {
+    margin: 40px;
+    /* Adjust this value as needed */
+    padding: 50px;
+    /* Adjust this value as needed */
+    display: flex;
+    flex-direction: column;
+    /* Change to row if you want horizontal alignment */
+    align-items: center;
+    /* This centers items horizontally in the flex container */
+    justify-content: center;
+    /* This centers items vertically in the flex container */
+
+}
+
+.car-article .article-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-article .article-left {
+    text-align: center;
+}
+
+/* CSS Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .car-article .article-left img {
+        width: 100%;
+        /* Makes the image take up the full width of its container */
+        height: auto;
+        /* Keeps the image aspect ratio intact */
+        max-width: none;
+        /* Overrides any existing max-width */
+    }
+}
+
+/* CSS Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .car-article h2 {
+        font-size: 16px;
+        /* Adjust this value to the desired font size on mobile */
+    }
+}
+
+.hero-section {
+    background-image: url('path-to-hero-image.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* Adjust text color as needed */
+}
+
+.hero-content {
+    max-width: 600px;
+    /* Adjust based on your design */
+    padding: 50px;
+}
+
+/* Responsive adjustments for the hero section on smaller screens */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 24px;
+        /* Smaller font size for the title */
+    }
+}
+
+/* Desktop Specific Styles */
+@media (min-width: 992px) {
+
+    /* Adjust the min-width as per your breakpoint for desktop */
+    .car-article img {
+        width: 100%;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain the aspect ratio */
+        max-width: none;
+        /* Override any existing max-width constraints */
+    }
+}
+
+
+/* Media Query for Mobile Devices */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .car-article .article-left img {
+        width: 100%;
+        /* Makes the image take up the full width of its container */
+        height: auto;
+        /* Ensures the image maintains its aspect ratio */
+    }
+}
+
+.hero-section {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.hero-image-container {
+    width: 100%;
+    overflow: hidden;
+    /* Optional: for a cleaner look */
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Ensures the image takes the full width */
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust based on your color scheme */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: for better readability */
+    padding: 10px;
+}
+
+.hero-image-container {
+    max-height: 400px;
+    /* Set a maximum height for the hero image container */
+    overflow: hidden;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    /* Ensure the image doesn't exceed the container's height */
+}
+
+.hero-section {
+    margin-bottom: 200px;
+    /* Add space below the hero section */
+}
+
+/* Or, if you prefer to add space above the first car article: */
+.container:first-of-type {
+    margin-top: 200px;
+    /* Add space above the first car article container */
+}
+
+/* Existing CSS */
+/* ... */
+
+/* Adjustments for the hero section */
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+    /* Space below the hero section */
+}
+
+.hero-image-container {
+    max-height: 800px;
+    /* Maximum height for the hero image container */
+    overflow: hidden;
+}
+
+.hero-image-container img {
+    width: 100%;
+    /* Image height limited to container's height */
+}
+
+/* Adjustments for the car article section */
+.car-article:first-of-type {
+    margin-top: 40px;
+    /* Space above the first car article container */
+}
+
+/* ... */
+/* Rest of your existing CSS */
+.hero-section {
+    width: 100%;
+    /* Ensures the hero section spans the full width */
+}
+
+.hero-image-container {
+    width: 100%;
+    /* Full width of the section */
+    display: block;
+    /* Ensures that the container takes up the full width */
+}
+
+.hero-image-container img {
+    width: 100%;
+    /* Full width of the container */
+    height: auto;
+    /* Maintains the aspect ratio of the image */
+    display: block;
+    /* Removes any default inline spacing */
+    object-fit: cover;
+    /* Ensures the image covers the area, may crop as needed */
+}
+
+.hero-image-container {
+    width: 100%;
+    display: block;
+    border: 3px solid #000;
+    /* Adjust the border color and width as needed */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for the hover effect */
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for the hover effect */
+}
+
+.hero-image-container:hover img {
+    opacity: 0.7;
+    /* Adjust the opacity level for the fade-out effect */
+}
+
+.website-divider {
+    width: 100%;
+    height: 50px;
+    /* Adjust height for the desired spacing */
+    background: url('') center center no-repeat;
+    /* Optional: Use an image for the divider */
+    background-size: cover;
+    /* If using an image */
+    margin: 40px 0;
+    /* Spacing above and below the divider */
+}
+
+
+.car-article {
+    border: 2px solid #CCCCCC;
+    /* Light grey border, adjust color as needed */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    margin: 35px;
+    /* Space between articles */
+    overflow: hidden;
+    /* Ensures the border encapsulates the entire content */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+}
+
+.car-article:hover {
+    box-shadow: 0 6px 12px rgba(0, 1, 0, 1);
+    /* Enhanced shadow on hover for a lifting effect */
+}
+
+.article-left {
+    width: 100%;
+    /* Full width on mobile */
+}
+
+.article-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensures images cover the area */
+}
+
+.article-right {
+    padding: 20px;
+    /* Space inside the article */
+}
+
+.article-title h2 {
+    color: black;
+    /* Darker text for titles */
+    margin-bottom: 10px;
+}
+
+.article-button {
+    background-color: firebrick;
+    /* Brand color for buttons */
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    /* Center the button */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.article-button:hover {
+    background-color: #C8121C;
+    /* Slightly darker on hover */
+}
+
+.article-right {
+    /* ... your existing styles ... */
+    text-align: center;
+    /* Center aligns the content */
+}
+
+.article-button {
+    display: inline-block;
+    /* Allows the button to be centered */
+    margin-top: 15px;
+    /* Adjust as needed for spacing */
+    /* ... other button styles ... */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.article-button:hover {
+    background-color: #D32F2F;
+    /* Darker shade of your button color */
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.car-article .article-left img {
+    border: 3px solid #333;
+    /* Adjust the border color and thickness as needed */
+    border-radius: 8px;
+    /* Rounded corners for the images */
+    margin: 10px 0;
+    /* Adds space around the image */
+    width: 100%;
+    /* Ensures the image takes up the appropriate width */
+    height: auto;
+    /* Maintains the aspect ratio of the image */
+    object-fit: cover;
+    /* Ensures the image covers the designated area */
+}
+
+.car-article .article-left img {
+    border: 3px solid #333;
+    /* Your existing border styles */
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Smooth transition for grow and shadow effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Initial subtle shadow */
+}
+
+.car-article .article-left img:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the image */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow to give a lifting effect */
+}
+
+.car-article .article-left {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for the hover effect */
+}
+
+.article-left:hover img {
+    opacity: 0.7;
+    /* Adjust the opacity level for the fade-out effect */
+}
+
+.text-divider {
+    text-align: center;
+    /* Center the text */
+    margin: 40px 0;
+    /* Add space above and below the divider */
+    position: relative;
+    /* Needed for absolute positioning of the span */
+}
+
+.text-divider span {
+    background: #FFF;
+    /* Adjust the color to match your page background */
+    padding: 0 10px;
+    /* Space around the text */
+    position: relative;
+    /* Raise the text above the border line */
+    z-index: 1;
+    /* Ensure the text is above the line */
+}
+
+.text-divider:after {
+    content: '';
+    display: block;
+    height: 2px;
+    /* Thickness of the border */
+    background-color: #333;
+    /* Color of the border */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    /* Aligns the border to the middle of the container */
+    z-index: 0;
+    /* Ensures the line is behind the text */
+}
+
+.text-divider {
+    text-align: center;
+    /* Center the text */
+    margin: 40px 0;
+    /* Add space above and below the divider */
+    position: relative;
+    /* Needed for absolute positioning of the span */
+    font-size: 46px;
+    font-weight: 600;
+    font-family: "rethink sans semibold", Helvetica Neue, Helvetica Neue, sans-serif;
+}
+
+
+.text-divider span {
+    background: #FFF;
+    /* Adjust the color to match your page background */
+    padding: 0 10px;
+    /* Space around the text */
+    position: relative;
+    /* Raise the text above the border line */
+    z-index: 1;
+    /* Ensure the text is above the line */
+}
+
+.text-divider:after {
+    content: '';
+    display: block;
+    height: 2px;
+    /* Thickness of the border */
+    background-color: #333;
+    /* Color of the border */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    /* Aligns the border to the middle of the container */
+    z-index: 0;
+    /* Ensures the line is behind the text */
+}
+
+.hero-section-logo {
+    display: none;
+    /* Hide the logo by default */
+    width: 100px;
+    /* Adjust the size as necessary */
+    margin: 0 auto;
+    /* Center the logo */
+    display: block;
+    /* Ensures the logo takes a full line for centering */
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust for your mobile breakpoint */
+    .hero-section-logo {
+        display: block;
+        /* Show the logo on mobile */
+    }
+}
+
+/* Ensure the hero image and other contents are styled correctly */
+.hero-section-logo {
+    text-align: center;
+    /* Other styling for the hero section */
+}
+
+.car-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Adjust alignment as needed */
+    margin: 20px;
+}
+
+.article-left,
+.article-right,
+.related-content {
+    flex: 1;
+    /* Adjust as needed to set a proportionate width */
+    margin: 10px;
+    /* Add some space around each section */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .car-container {
+        flex-direction: column;
+    }
+}
+
+
+
+.car-article,
+.related-content {
+    flex: 1;
+    /* This allows both elements to grow and take up available space */
+    margin: 10px;
+}
+
+/* You might need to adjust this based on the actual width of your content */
+@media (min-width: 768px) {
+
+    /* Adjust breakpoint as necessary */
+    .car-article,
+    .related-content {
+        width: calc(50% - 20px);
+        /* Subtracting margin */
+    }
+}
+
+/* Stack them on top of each other on smaller screens */
+@media (max-width: 767px) {
+
+    .car-article,
+    .related-content {
+        width: 100%;
+    }
+}
+
+.related-content {
+    border: 2px solid #333333;
+    /* Adjust the color as needed */
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(199, 110, 110);
+    /* Optional shadow for depth */
+    background-color: #f8f8f8;
+    /* Light background color, adjust as needed */
+}
+
+.related-content h3 {
+    margin-top: 0;
+    color: #202020;
+    /* Dark text color for the heading */
+}
+
+.related-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-content li+li {
+    margin-top: 10px;
+    /* Adds space between list items */
+}
+
+.related-content a {
+    color: #0066cc;
+    /* Adjust link color as needed */
+    text-decoration: none;
+}
+
+.related-content a:hover {
+    text-decoration: underline;
+    /* Adds an underline on hover */
+}
+
+/* Existing styles... */
+
+
+/* Adjust the layout of car-article on mobile */
+@media (max-width: 768px) {
+    .car-article {
+        flex-direction: column;
+        /* Stack article-left and article-right on top of each other */
+        align-items: center;
+        /* Center-align the content */
+        margin: 20px 0;
+        /* Adjust margin for spacing */
+    }
+
+    .article-left,
+    .article-right {
+        width: 100%;
+        /* Full width for mobile */
+        max-width: none;
+        /* Override any max-width settings */
+        padding: 15px;
+        /* Adjust padding for spacing */
+        text-align: center;
+        /* Center-align the text */
+    }
+
+    .article-left img {
+        width: 100%;
+        /* Full width for the image */
+        height: auto;
+        /* Maintain image aspect ratio */
+    }
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+    /* Ensure article-right content is aligned properly */
+    .car-article .article-right {
+        text-align: center;
+        /* Center-align the text and button */
+        display: flex;
+        /* Use flexbox for alignment */
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center-align the flex items */
+        width: 100%;
+        /* Full width for mobile */
+    }
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.article-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article-subtitle {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* General Styles for car-article */
+.car-article {
+    /* other styles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .car-article {
+        width: 100%;
+        /* Full width on mobile screens */
+        margin-bottom: 20px;
+        /* Space between articles */
+        /* Define a fixed height if necessary */
+    }
+
+    .car-article .article-left,
+    .car-article .article-right {
+        width: 100%;
+        /* Make children occupy full width */
+    }
+
+    .car-article img {
+        width: 100%;
+        /* Make images responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .car-article .article-title,
+    .car-article .article-button {
+        text-align: center;
+        /* Center-align text and button */
+        padding: 10px;
+        /* Padding for spacing */
+    }
+}
+
+.hero-image-container {
+    width: 100%;
+    /* Full width */
+    position: relative;
+    /* If you want to position elements over the image */
+}
+
+.hero-image-container img {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+.article-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column that takes full width */
+    gap: 20px;
+    /* Adjust the gap between grid items as needed */
+    padding: 20px;
+    /* Add some padding around the grid */
+}
+
+.article-1,
+.article-2,
+.article-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column that takes full width */
+    gap: 10px;
+    /* Adjust as needed */
+}
+
+.article-title,
+.subtitle,
+.article-text {
+    grid-column: 1fr;
+    /* Makes these elements span the entire column */
+}
+
+.article-1 img,
+.article-2 img,
+.article-3 img {
+    width: 100%;
+    height: auto;
+}
+
+.article-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column that takes full width */
+    gap: 20px;
+    /* Adjust the gap between grid items as needed */
+    padding: 20px;
+    /* Add some padding around the grid */
+    max-width: 1200px;
+    /* Adjust this value to set the maximum width */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* Centers the section horizontally */
+}
+
+.article-section {
+    width: 100%;
+    /* Sets the width of the section to full width of the viewport */
+    max-width: none;
+    /* Removes any maximum width constraint */
+    margin: 0 auto;
+    /* Keeps the section centered */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    /* Adds padding inside the section, adjust as needed */
+}
+
+/* Adjust the width of each article inside the section */
+.article-1,
+.article-2,
+.article-3 {
+    width: 100%;
+    /* Each article takes full width of the article section */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    /* Add padding inside each article for better readability */
+}
+
+/* Ensure the text within each article also takes full width */
+.article-text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* Full width to match the article's width */
+}
+
+.article-section {
+    width: 100%;
+    /* Full width of the viewport */
+    max-width: none;
+    /* Removes any maximum width constraint */
+    margin: 0 auto;
+    /* Centers the section */
+    padding: 20px;
+    /* Adds padding inside the section */
+    display: flex;
+    /* Enables flexbox */
+    flex-direction: column;
+    /* Aligns children elements in a column */
+    align-items: center;
+    /* Centers children elements horizontally */
+}
+
+.article-1,
+.article-2,
+.article-3 {
+    width: 100%;
+    /* Full width within the article section */
+    max-width: 800px;
+    /* Adjust this value as needed for optimal readability */
+    margin: 0;
+    /* Adds margin above and below each article */
+    box-sizing: border-box;
+    /* Ensures padding and border are included in the width */
+}
+
+.article-title,
+.subtitle,
+.article-text {
+    width: 100%;
+    /* Full width of their parent container */
+    text-align: center;
+    /* Centers the text */
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 2.5;
+    font-weight: 300;
+    /* Adds padding for spacing, adjust as needed */
+}
+
+.subtitle {
+    padding: 0;
+    margin: 0;
+}
+
+.subtitle h3 {
+    margin: 0;
+}
+
+/* Optional: You may also want to center the images */
+.article-left img,
+.Nakai-san-drilling img {
+    display: block;
+    /* Changes the image display type */
+    margin: 0 auto;
+    /* Centers the image horizontally */
+}
+
+.article-title h2 {
+    line-height: 55px;
+    font-size: 36px;
+    /* Increase the font size as desired */
+    /* Keep the rest of your existing styles for .article-title h2 */
+}
+
+.article-title p {
+    line-height: 40px;
+}
+
+.Nakai-san-drilling {
+    display: flex;
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+    margin-top: 20px;
+    /* Optional: add some space above the image */
+}
+
+.Nakai-san-drilling img {
+    width: auto;
+    /* Maintain the original image width */
+    height: auto;
+    /* Maintain the original image height */
+}
+
+.article-aside-container {
+    display: flex;
+    justify-content: space-between;
+    /* Adjusts spacing between article and aside */
+    align-items: flex-start;
+    /* Aligns items at their start */
+    margin-bottom: 20px;
+    /* Space below the container */
+}
+
+.article-1,
+.related-content {
+    flex: 1;
+    /* Allows both elements to grow equally */
+    margin-right: 10px;
+    /* Space between article and aside */
+}
+
+.related-content {
+    /* Your existing styles for the aside */
+    margin-left: 10px;
+    /* Adds space to the left of the aside */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .article-aside-container {
+        flex-direction: column;
+        /* Stacks the article and aside vertically on smaller screens */
+    }
+
+    .article-1,
+    .related-content {
+        margin-right: 0;
+        /* Removes right margin on smaller screens */
+        margin-left: 0;
+        /* Removes left margin on smaller screens */
+    }
+}
+
+.main-content-container {
+    display: flex;
+    justify-content: space-between;
+    /* Adjusts the spacing between main content and aside */
+    align-items: flex-start;
+    /* Aligns items at their start */
+    margin-bottom: 20px;
+    /* Space below the container */
+}
+
+.article-section,
+.related-content {
+    flex: 1;
+    /* Allows both elements to grow equally */
+    margin-right: 10px;
+    /* Space between main content and aside */
+}
+
+.related-content {
+    /* Your existing styles for the aside */
+    margin-left: 10px;
+    /* Adds space to the left of the aside */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content-container {
+        flex-direction: column;
+        /* Stacks the main content and aside vertically on smaller screens */
+    }
+
+    .article-section,
+    .related-content {
+        margin-right: 0;
+        /* Removes right margin on smaller screens */
+        margin-left: 0;
+        /* Removes left margin on smaller screens */
+    }
+}
+
+.main-content-container {
+    display: flex;
+    /* Establishes a flex container */
+    flex-wrap: wrap;
+    /* Allows items to wrap if needed */
+    justify-content: space-between;
+    /* Spacing between the main and aside elements */
+    align-items: start;
+    /* Aligns items to the start of the container */
+}
+
+.article-section {
+    flex: 1;
+    /* Allows the article section to grow and take available space */
+    /* Add some margin or padding if needed */
+}
+
+.related-content {
+    flex-basis: 20%;
+    /* Adjust the width of the aside element */
+    /* Add some margin or padding if needed */
+}
+
+/* Responsive design adjustments, if needed */
+@media (max-width: 768px) {
+    .main-content-container {
+        flex-direction: column;
+    }
+
+    .related-content {
+        flex-basis: 100%;
+        /* Full width on smaller screens */
+    }
+}
+
+.main-content-container {
+    display: flex;
+    /* Establishes a flex container */
+    flex-wrap: nowrap;
+    /* Prevents wrapping of items */
+    justify-content: space-between;
+    /* Spacing between the main and aside elements */
+    align-items: flex-start;
+    /* Aligns items at the top */
+    gap: 20px;
+    /* Space between main and aside */
+}
+
+.article-section {
+    flex-grow: 1;
+    /* Allows the article section to grow and take available space */
+    max-width: 75%;
+    /* Adjust this as needed */
+}
+
+.related-content {
+    flex-basis: 20%;
+    /* Adjust the width of the aside element */
+    max-width: 20%;
+    /* Adjust this as needed */
+}
+
+/* Responsive design adjustments, if needed */
+@media (max-width: 1024px) {
+    .main-content-container {
+        flex-direction: column;
+    }
+
+    .article-section,
+    .related-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Subscription Container */
+
+.content {
+    width: 80%;
+    max-width: 600px;
+    /* Adjust as needed */
+    text-align: center;
+}
+
+/* Base Styles */
+/* Add your existing styles here, which will apply to all screen sizes by default */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .main-content-container {
+        flex-direction: column;
+    }
+
+    .article-section,
+    .related-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Adjustments for mobile devices */
+    .navbar-left div,
+    .navbar-right div {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .article-text,
+    .subtitle h3,
+    .article-title h2 {
+        padding: 0 15px;
+        /* Add padding for text content */
+    }
+
+    .container .content {
+        width: 90%;
+        /* Smaller content width for mobile */
+    }
+}
+
+/* Existing Styles */
+
+/* ... Your current CSS ... */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .article-title h2 {
+        font-size: .8em;
+        /* Smaller font size */
+    }
+
+    .article-section {
+        width: 100%;
+        /* Full width */
+        padding: 0 15px;
+        /* Padding for small screens */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Show hamburger menu */
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    /* ... */
+}
+
+@media(max-width: 1200px) {
+
+    .article-left,
+    .article-right {
+        max-width: 75%;
+        width: 75%;
+    }
+
+    .article-title p {
+        line-height: 35px;
+        font-size: 20px !important;
+    }
+
+    .article-left {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    footer .related-content {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .related-content {
+        max-width: 70%;
+    }
+}
+
+@media(max-width: 990px) {
+    #close-menu {
+        display: block;
+    }
+
+    header .navbar-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .article-left,
+    .article-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header .navbar-right,
+    header .social-icons {
+        display: none;
+    }
+
+    .menu-icon {
+        padding-right: 10px;
+        display: block;
+    }
+
+    .menu-nav-wrapper {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+        margin: 0 !important;
+        z-index: 99;
+        background-color: #fff;
+        top: 0;
+        right: -100%;
+        transition: all 0.2s ease-in;
+    }
+
+    .menu-nav-wrapper.show {
+        right: 0;
+    }
+
+    header .menu-nav {
+        gap: 20px;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article-1,
+    .article-2,
+    .article-3 {
+        padding: 0;
+    }
+}
+
+@media(max-width: 810px) {
+    .article-title h2 {
+        line-height: 44px;
+        font-size: 30px;
+    }
+
+    .car-article {
+        padding: 30px 20px;
+    }
+
+    .text-divider {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .car-article .article-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer .navbar {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    footer .navbar .navbar-left {
+        flex-direction: column;
+    }
+
+    .car-article:first-of-type {
+        margin-top: 25px;
+    }
+
+    .article-text {
+        line-height: 30px;
+    }
+
+    .article-title,
+    .subtitle,
+    .article-text {
+        margin: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .hero-title h1 {
+        font-size: 20px;
+    }
+
+    .car-container {
+        margin: 0;
+    }
+
+    .article-title h2 {
+        padding: 0;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .article-title p {
+        line-height: 28px;
+        font-size: 16px !important;
+    }
+
+    .car-article {
+        padding: 0px 15px;
+    }
+
+    .car-article .article-right {
+        margin: 10px 0;
+    }
+
+    .article-section .Nakai-san-drilling {
+        max-width: 100%;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .related-content {
+        max-width: 90%;
+    }
+}
